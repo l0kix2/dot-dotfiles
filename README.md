@@ -7,4 +7,5 @@ python ~/.dotfiler/bin/dot update
 ~/.scripts/get_dotfiler_repos.sh
 python ~/.dotfiler/bin/dot update
 . ~/.profile
+install_things.sh
 ```
