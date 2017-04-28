@@ -1,3 +1,6 @@
 # dot-dotfiles
 
-`python ~/.dotfiler/bin/dot add git@github.com:l0kix2/dot-dotfiles.git`
+```sh
+git clone git@github.com:svetlyak40wt/dotfiler.git .dotfiler
+python ~/.dotfiler/bin/dot add git@github.com:l0kix2/dot-dotfiles.git
+```
