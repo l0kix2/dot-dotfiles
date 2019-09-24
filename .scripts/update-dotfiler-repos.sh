@@ -1,8 +1,3 @@
 #!/bin/bash
-python ~/.dotfiler/bin/dot add git@github.com:l0kix2/dot-common-sh.git
-python ~/.dotfiler/bin/dot add git@github.com:l0kix2/dot-zsh.git
-python ~/.dotfiler/bin/dot add git@github.com:l0kix2/dot-bash.git
-python ~/.dotfiler/bin/dot add git@github.com:l0kix2/dot-oh-my-zsh.git
-python ~/.dotfiler/bin/dot add git@github.com:l0kix2/dot-python.git
-python ~/.dotfiler/bin/dot add git@github.com:l0kix2/dot-homebrew.git
-python ~/.dotfiler/bin/dot add git@github.com:l0kix2/dot-arcadia.git
+find ~/.dotfiler -name '.git' | grep -v '.dotfiler/.git' | awk -F/ '{print $5}' | sort | diff ~/.conf/dot-repos.txt - | grep '>' | awk '{print $2}' | xargs -I{} rm -r  ~/.dotfiler/{}
+cat ~/.conf/dot-repos.txt | xargs -I {} python ~/.dotfiler/bin/dot add git@github.com:l0kix2/dot-{}.git
