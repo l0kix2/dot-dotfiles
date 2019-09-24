@@ -1,3 +1,5 @@
 #!/bin/sh
-sh ~/.scripts/oh-my-zsh-install.sh
-sh ~/.scripts/change_shell_to_zsh.sh
+
+for install_script in $HOME/.scripts/configure/*; do
+    sh $config_piece
+done
