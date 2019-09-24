@@ -1,0 +1,7 @@
+dot-common-sh
+dot-zsh
+dot-bash
+dot-oh-my-zsh
+dot-python
+dot-homebrew
+dot-arcadia
