@@ -1,7 +1,8 @@
-dot-common-sh
-dot-zsh
+dot-arcadia
 dot-bash
+dot-common-sh
+dot-dotfiles
+dot-homebrew
 dot-oh-my-zsh
 dot-python
-dot-homebrew
-dot-arcadia
+dot-zsh
